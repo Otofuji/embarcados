@@ -57,18 +57,16 @@
  * !! Isso é um exemplo ruim, nao deve ser feito na pratica, !!
  * !! pois nao se deve usar delays dentro de interrupcoes    !!
  */
-volatile Bool but_flag;
-
-void but_callback(void){
-	
-	for (int i=0;i<5;i++)
-	{
-		pio_clear(LED_PIO, LED_IDX_MASK);
-		but_flag = true;
-		pio_set(LED_PIO, LED_IDX_MASK);
-	}
+void but_callback(void)
+{
+  for (int i=0;i<5;i++)
+  {
+    pio_clear(LED_PIO, LED_IDX_MASK);
+    delay_ms(200);
+    pio_set(LED_PIO, LED_IDX_MASK);
+    delay_ms(200);
+  }
 }
-
 
 /************************************************************************/
 /* funções                                                              */
@@ -116,10 +114,6 @@ void main(void)
 {
 	// Inicializa clock
 	sysclk_init();
-	
-	Bool but_flag;
-
-	
 
 	// Desativa watchdog
 	WDT->WDT_MR = WDT_MR_WDDIS;
@@ -129,17 +123,7 @@ void main(void)
 
 	// super loop
 	// aplicacoes embarcadas no devem sair do while(1).
-
-	while(1){
-	
-		// trata interrupção do botão
-		if(but_flag){
-		
-			but_callback();
-			
-		
-			// zera flag
-			but_flag = false;
-		}
+	while(1)
+  {
 	}
 }
