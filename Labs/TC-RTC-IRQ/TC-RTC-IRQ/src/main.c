@@ -236,11 +236,12 @@ int main(void){
 	rtc_set_time_alarm(RTC, 1, HOUR, 1, MINUTE+1, 1, SECOND);
 	
 	/** Configura timer TC0, canal 1 */
-	TC_init(TC0, ID_TC1, 1, 4);
+	TC_init(TC0, ID_TC1, 1, 4*2);
 
 
 	while (1) {
 		/* Entrar em modo sleep */
+		pmc_sleep(SAM_PM_SMODE_SLEEP_WFI);
 
 	}
 
