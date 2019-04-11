@@ -191,7 +191,7 @@ int main(void)
 
 			printf("Temp : %d \r\n", convert_adc_to_temp(g_ul_value));
 			afec_start_software_conversion(AFEC0);
-			delay_s(1);
+			//pmc_sleep(SAM_PM_SMODE_SLEEP_WFI);
 		}
 	}
 }
