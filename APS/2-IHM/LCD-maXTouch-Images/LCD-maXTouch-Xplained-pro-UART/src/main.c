@@ -1,9 +1,45 @@
+
 #include "asf.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "ioport.h"
+
+typedef struct {
+	const uint8_t *data;
+	uint16_t width;
+	uint16_t height;
+	uint8_t dataSize;
+} tImage;
+
 #include "logo.h"
+#include "img/botao_cancelar.h"
+#include "img/botao_destravar.h"
+#include "img/botao_emergencia.h"
+#include "img/botao_iniciar.h"
+#include "img/botao_travar.h"
+#include "img/emandamento_centrifuga.h"
+#include "img/emandamento_diario.h"
+#include "img/emandamento_enxague.h"
+#include "img/emandamento_pesado.h"
+#include "img/emandamento_rapido.h"
+#include "img/iniciar_diario.h"
+#include "img/iniciar_enxague.h"
+#include "img/iniciar_pesado.h"
+#include "img/iniciar_rapido.h"
+#include "img/iniciar_centrifuga.h"
+#include "img/menu_centrifuga.h"
+#include "img/menu_diario.h"
+#include "img/menu_enxague.h"
+#include "img/menu_pesado.h"
+#include "img/menu_rapido.h"
+#include "img/titulo_centrifuga.h"
+#include "img/titulo_diario.h"
+#include "img/titulo_emandamento.h"
+#include "img/titulo_enxague.h"
+#include "img/titulo_menu.h"
+#include "img/titulo_pesado.h"
+#include "img/titulo_rapido.h"
 
 #define STRING_EOL    "\r\n"
 #define STRING_HEADER "-- SAME70 LCD DEMO --"STRING_EOL	\
@@ -18,14 +54,7 @@ struct ili9488_opt_t g_ili9488_display_opt;
  * \brief Configure UART console.
  */
 
-/*
- typedef struct {
-     const uint8_t *data;
-     uint16_t width;
-     uint16_t height;
-     uint8_t dataSize;
-     } tImage;
-*/
+
 	
 static void configure_console(void)
 {
@@ -55,7 +84,7 @@ static void configure_lcd(void){
 	ili9488_set_foreground_color(COLOR_CONVERT(COLOR_BLACK));
 	ili9488_draw_filled_rectangle(0, 0, ILI9488_LCD_WIDTH-1, 120-1);
 	ili9488_draw_filled_rectangle(0, 360, ILI9488_LCD_WIDTH-1, 480-1);
-	ili9488_draw_pixmap(30, 150, logoImage.width, logoImage.height, logoImage.data);
+	ili9488_draw_pixmap(30, 150, botao_destravar.width, botao_destravar.height, botao_destravar.data);
 	
 }
 
