@@ -4,7 +4,7 @@
 * filename: unsaved
 * name: botao_destravar
 *
-* preset name: Color R8G8B8
+* preset name: R8G8B8
 * data block size: 8 bit(s), uint8_t
 * RLE compression enabled: no
 * conversion type: Color, not_used not_used
