@@ -31,11 +31,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  13 .debug_macro  00006fc9  00000000  00000000  00043765  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_line   0000ca99  00000000  00000000  0004a72e  2**0
+ 14 .debug_line   0000cd85  00000000  00000000  0004a72e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    0008d8ef  00000000  00000000  000571c7  2**0
+ 15 .debug_str    0008d927  00000000  00000000  000574b3  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_frame  00002df4  00000000  00000000  000e4ab8  2**2
+ 16 .debug_frame  00002df4  00000000  00000000  000e4ddc  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -15225,7 +15225,7 @@ static inline void stdio_serial_init(volatile void *usart, const usart_serial_op
   40dc0c:	4f4d 2d20 0d2d 2d0a 202d 4153 454d 3037     MO --..-- SAME70
   40dc1c:	582d 4c50 2044 2d2d 0a0d 2d2d 4320 6d6f     -XPLD --..-- Com
   40dc2c:	6970 656c 3a64 4120 7270 3120 2038 3032     piled: Apr 18 20
-  40dc3c:	3931 3120 3a31 3532 303a 2032 2d2d 0a0d     19 11:25:02 --..
+  40dc3c:	3931 3120 3a31 3932 343a 2033 2d2d 0a0d     19 11:29:43 --..
   40dc4c:	0000 0000 4d45 4142 4143 4f44 2053 6425     ....EMBACADOS %d
   40dc5c:	0000 0000                                   ....
 
