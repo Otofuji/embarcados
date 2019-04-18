@@ -14,10 +14,10 @@ typedef struct {
 
 #include "logo.h"
 #include "img/botao_cancelar.h"
-#include "botao_destravar.h"
+#include "img/botao_destravar.h"
 #include "img/botao_emergencia.h"
 #include "img/botao_iniciar.h"
-#include "botao_travar.h"
+#include "img/botao_travar.h"
 #include "img/emandamento_centrifuga.h"
 #include "img/emandamento_diario.h"
 #include "img/emandamento_enxague.h"
