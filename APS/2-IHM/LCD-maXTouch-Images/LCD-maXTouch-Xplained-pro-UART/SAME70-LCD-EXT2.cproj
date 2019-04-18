@@ -744,6 +744,12 @@
     <Folder Include="src\img" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\botao_cancelar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\botao_destravar.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\img\botao_cancelar.h">
       <SubType>compile</SubType>
     </Compile>

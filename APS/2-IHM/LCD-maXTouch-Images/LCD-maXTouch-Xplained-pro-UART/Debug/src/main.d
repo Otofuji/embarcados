@@ -174,9 +174,9 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\string.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\xlocale.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\string.h \
- ../src/logo.h ../src/img/botao_cancelar.h ../src/img/botao_destravar.h \
+ ../src/logo.h ../src/img/botao_cancelar.h ../src/botao_destravar.h \
  ../src/img/botao_emergencia.h ../src/img/botao_iniciar.h \
- ../src/img/botao_travar.h ../src/img/emandamento_centrifuga.h \
+ ../src/botao_travar.h ../src/img/emandamento_centrifuga.h \
  ../src/img/emandamento_diario.h ../src/img/emandamento_enxague.h \
  ../src/img/emandamento_pesado.h ../src/img/emandamento_rapido.h \
  ../src/img/iniciar_diario.h ../src/img/iniciar_enxague.h \
@@ -561,13 +561,13 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/img/botao_cancelar.h:
 
-../src/img/botao_destravar.h:
+../src/botao_destravar.h:
 
 ../src/img/botao_emergencia.h:
 
 ../src/img/botao_iniciar.h:
 
-../src/img/botao_travar.h:
+../src/botao_travar.h:
 
 ../src/img/emandamento_centrifuga.h:
 

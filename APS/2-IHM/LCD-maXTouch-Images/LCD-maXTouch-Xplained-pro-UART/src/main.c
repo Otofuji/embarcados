@@ -14,10 +14,10 @@ typedef struct {
 
 #include "logo.h"
 #include "img/botao_cancelar.h"
-#include "img/botao_destravar.h"
+#include "botao_destravar.h"
 #include "img/botao_emergencia.h"
 #include "img/botao_iniciar.h"
-#include "img/botao_travar.h"
+#include "botao_travar.h"
 #include "img/emandamento_centrifuga.h"
 #include "img/emandamento_diario.h"
 #include "img/emandamento_enxague.h"
@@ -84,7 +84,7 @@ static void configure_lcd(void){
 	ili9488_set_foreground_color(COLOR_CONVERT(COLOR_BLACK));
 	ili9488_draw_filled_rectangle(0, 0, ILI9488_LCD_WIDTH-1, 120-1);
 	ili9488_draw_filled_rectangle(0, 360, ILI9488_LCD_WIDTH-1, 480-1);
-	ili9488_draw_pixmap(30, 150, botao_destravar.width, botao_destravar.height, botao_destravar.data);
+	ili9488_draw_pixmap(0, 0, menu_rapido.width, menu_rapido.height, menu_rapido.data);
 	
 }
 
