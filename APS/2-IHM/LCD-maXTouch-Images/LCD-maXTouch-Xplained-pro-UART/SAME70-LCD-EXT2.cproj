@@ -744,34 +744,49 @@
     <Folder Include="src\img" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\botao_cancelar.h">
+    <Compile Include="src\img\andamento_centrifuga.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\botao_destravar.h">
+    <Compile Include="src\img\andamento_diario.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\botao_emergencia.h">
+    <Compile Include="src\img\andamento_enxague.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\botao_iniciar.h">
+    <Compile Include="src\img\andamento_pesado.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\botao_travar.h">
+    <Compile Include="src\img\andamento_rapido.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\emandamento_centrifuga.h">
+    <Compile Include="src\img\descricao_centrifuga.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\emandamento_diario.h">
+    <Compile Include="src\img\descricao_diario.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\emandamento_enxague.h">
+    <Compile Include="src\img\descricao_enxague.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\emandamento_pesado.h">
+    <Compile Include="src\img\descricao_pesado.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\emandamento_rapido.h">
+    <Compile Include="src\img\descricao_rapido.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\icone_cancelar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\icone_destravar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\icone_emergencia.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\icone_iniciar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\icone_travar.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\img\iniciar_centrifuga.h">
@@ -802,12 +817,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\img\menu_rapido.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="src\img\titulo_centrifuga.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="src\img\titulo_diario.h">
       <SubType>compile</SubType>
     </Compile>
     <None Include="src\asf.h">
@@ -1539,19 +1548,25 @@
     <Compile Include="src\ASF\sam\utils\syscalls\gcc\syscalls.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\titulo_emandamento.h">
+    <Compile Include="src\img\titulo_andamento.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\img\titulo_enxague.h">
+    <Compile Include="src\img\titulo_iniciarcentrifuga.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\titulo_iniciardiario.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\titulo_iniciarenxague.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\titulo_iniciarpesado.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\img\titulo_iniciarrapido.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\img\titulo_menu.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="src\img\titulo_pesado.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="src\img\titulo_rapido.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\logo.h">

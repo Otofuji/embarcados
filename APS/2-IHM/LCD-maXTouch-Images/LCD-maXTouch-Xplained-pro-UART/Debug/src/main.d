@@ -187,7 +187,9 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  ../src/img/titulo_iniciarcentrifuga.h ../src/img/titulo_iniciardiario.h \
  ../src/img/titulo_andamento.h ../src/img/titulo_iniciarenxague.h \
  ../src/img/titulo_menu.h ../src/img/titulo_iniciarpesado.h \
- ../src/img/titulo_iniciarrapido.h
+ ../src/img/titulo_iniciarrapido.h ../src/img/descricao_centrifuga.h \
+ ../src/img/descricao_diario.h ../src/img/descricao_enxague.h \
+ ../src/img/descricao_pesado.h ../src/img/descricao_rapido.h
 
 ../src/asf.h:
 
@@ -612,3 +614,13 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/img/titulo_iniciarpesado.h:
 
 ../src/img/titulo_iniciarrapido.h:
+
+../src/img/descricao_centrifuga.h:
+
+../src/img/descricao_diario.h:
+
+../src/img/descricao_enxague.h:
+
+../src/img/descricao_pesado.h:
+
+../src/img/descricao_rapido.h:
