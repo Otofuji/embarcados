@@ -159,13 +159,13 @@ static void configure_lcd(void){
 	ili9488_draw_pixmap(79, ILI9488_LCD_HEIGHT-49 , icone_emergencia.width, icone_emergencia.height, icone_emergencia.data);
 	*/
 	//ANDAMENTO DIARIO
-	/*
+	
 	ili9488_draw_pixmap(ILI9488_LCD_WIDTH-33, 25, icone_travar.width, icone_travar.height, icone_travar.data);
 	ili9488_draw_pixmap(10, 25, icone_travar.width, icone_travar.height, icone_travar.data);
 	ili9488_draw_pixmap(108, 25, titulo_andamento.width, titulo_andamento.height, titulo_andamento.data);
 	ili9488_draw_pixmap(124, 100, andamento_diario.width, andamento_diario.height, andamento_diario.data);
 	ili9488_draw_pixmap(79, ILI9488_LCD_HEIGHT-49 , icone_emergencia.width, icone_emergencia.height, icone_emergencia.data);
-	*/
+	
 	//ANDAMENTO PESADO
 	/*
 	ili9488_draw_pixmap(ILI9488_LCD_WIDTH-33, 25, icone_travar.width, icone_travar.height, icone_travar.data);
@@ -191,10 +191,10 @@ static void configure_lcd(void){
 	ili9488_draw_pixmap(79, ILI9488_LCD_HEIGHT-49 , icone_emergencia.width, icone_emergencia.height, icone_emergencia.data);
 	*/
 	//LOKADO
-	
+	/*	
 	ili9488_draw_pixmap(ILI9488_LCD_WIDTH-33, 25, icone_destravar.width, icone_destravar.height, icone_destravar.data);
 	ili9488_draw_pixmap(10, 25, icone_destravar.width, icone_destravar.height, icone_destravar.data);
-	
+	*/
 }
 
 /**
@@ -226,7 +226,7 @@ int main(void)
 	ili9488_draw_filled_rectangle(0, 300, ILI9488_LCD_WIDTH-1, 315);
 	ili9488_set_foreground_color(COLOR_CONVERT(COLOR_WHITE));
 	
-	sprintf(stingLCD, "EMBACADOS %d", 2019);
+	sprintf(stingLCD, "%d min restantes", 10);
 	ili9488_draw_string(75, 300, stingLCD);
 
 	while (1) {
